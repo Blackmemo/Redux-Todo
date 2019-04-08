@@ -17,3 +17,7 @@
   flex-direction: column;
   margin: 50px 500px 0 500px;
 }
+
+input {
+  text-align: center;
+}
