@@ -27,12 +27,14 @@ class Todo extends React.Component {
         return (
             <>
             <div className='todoCont'>
+            <h1>To-Do List</h1>
                 {this.props.todos.map(item => (
                     <div className='todoList'>
                     <h1 key={item.id}>{item.todoItem}</h1>
                     <h3 onClick={() => this.deleteTodo(item.id)} className='dBtn'>x</h3>
                     </div>
                 ))}
+                
                 <input
                 type="text"
                 name="newTodo"
