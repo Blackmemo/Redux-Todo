@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+}
+
+.todoList {
+  display: flex;
+  justify-content: center;
+}
+
+.dBtn {
+  color: red;
+  margin-left: 10px;
+}
+
+.todoCont {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 500px 0 500px;
+}
