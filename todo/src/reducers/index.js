@@ -1,9 +1,7 @@
-import { ADD_TODO, DELETE_TODO, TOGGLE_TODO } from '../actions';
+import { ADD_TODO, DELETE_TODO, TOGGLE_TODO, CLEAR_COMPLETED } from '../actions';
 
 const initialState = {
-    todos: [
-        
-    ]
+    todos: []
 };
 
 const reducer = (state = initialState, action) => {
@@ -36,6 +34,12 @@ const reducer = (state = initialState, action) => {
                 : todo
             )
         };
+
+        case CLEAR_COMPLETED:
+        return {
+            ...state,
+            todos: state.todos.filter(todo => !( todo.completed ))
+        }
         default:
         return state;
     }

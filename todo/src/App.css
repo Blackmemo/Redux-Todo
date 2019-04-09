@@ -5,6 +5,7 @@
 .todoList {
   display: flex;
   justify-content: center;
+  
 }
 
 .dBtn {
@@ -17,13 +18,27 @@
   display: flex;
   flex-direction: column;
   margin: 50px 500px 0 500px;
+  border: 1px solid black;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px gray;
 }
 
 input {
   text-align: center;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid gray;
 }
 
 .completed {
   color: green;
   text-decoration: line-through;
+}
+
+button {
+  margin: 8px;
+  border-radius: 5px;
+  border: none;
+  padding: 15px;
 }
